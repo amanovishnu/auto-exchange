@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'cars.apps.CarsConfig',
     'contacts.apps.ContactsConfig',
     'accounts.apps.AccountsConfig',
-    'ckeditor',
+    'django_ckeditor_5',
     'django.contrib.humanize',
 
     # social account
@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'carzone.urls'
